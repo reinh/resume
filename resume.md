@@ -41,7 +41,7 @@ Skills
 
 Work Experience
 ---------------
-Devver  
+__Devver__  
 Founder / CTO / Ruby Software Developer  
 April 2008 - April 2010  
 Software startup to make the lives of developers easier. Originally developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  
@@ -53,28 +53,29 @@ Software startup to make the lives of developers easier. Originally developed ac
 * Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
 * Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments.
 
-Pretheory  
+__Pretheory__ 
 Founder  
 May 2007 - April 2008  
 Small Denver-based consumer web startup. Built Seekler.com to help people find the best of everything online by user generated social, community-based top 10 lists on consumer-driven topics or products.  
 * [Seekler.com](http://seekler.com)
 
-Indigio  
+__Indigio__  
 Java Lead Engineer  
 August 2006 - May 2007  
 Developed web sites for Fortune 500 companies. Managed a small Java team with local and international remote employees.  
 
 
-Impact Science & Technology (IST)  
+__Impact Science & Technology (IST)__  
 Java Software Engineer  
 December 2005 - June 2006  
 Developed full lifecycle of a DOD distributed synchronous infrastructure in Java.  
 
 
-Education:  
+Education
+---------------  
 University of Colorado  
 Boulder, CO  
 B.S., Computer Science  
 GPA: 3.185  
 
-References available on request
+_References available on request_  
