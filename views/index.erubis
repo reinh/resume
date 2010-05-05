@@ -4,6 +4,9 @@
    <link href="/style.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
+   <div id='formats'>
+     Formats: <a href="/">HTML</a> | <a href='latex'>Latex</a>
+   </div>
    <div id="resume">
       <%= resume %>
    </div>

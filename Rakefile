@@ -4,6 +4,10 @@ task :build do
 	# run sinatra locally...
 end
 
+desc "Test the App"
+task :test do
+end
+
 desc "Deploy to Heroku."
 task :deploy do
 	require 'heroku'

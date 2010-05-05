@@ -14,6 +14,25 @@ Heroku.
  5. Edit views/style.less to make your resume look pretty.
  6. "rake deploy" to push your resume to the internet.
 
+## TODOs
+
+* test suite
+* Make tests generic from resume
+* Make the resume file not included in the git repo
+* fork me on github corner banner, can be displayed on html, but not rendered to other formats
+* automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
+  * http://github.com/rtomayko/rdiscount (current)
+  * http://kramdown.rubyforge.org/
+  * http://maruku.rubyforge.org/ (pdf support)
+  * http://github.com/alphabetum/pandoc-ruby (many formats RTF docbook man ODF slides etc)
+    * http://railsforum.com/viewtopic.php?id=35844
+  * http://rtomayko.github.com/ronn/ (markdown to man page)
+* gem binary and assocatiated commands (http://groups.google.com/group/rails-business/msg/68cf8a890c0d4fc8?pli=1)
+* simpler automated deploy to heroku (possibly with staging server)
+* deploy to personal github page
+* possibly merge with a resume generator which after filling out some info via forms or yaml can generate varios resumes in all formats
+  * Users could submit templates / stylesheets allowing for differently formatted resumes
+
 ## License
 
 resume.md is property of Nathaniel "Nat" Welch. You are welcome to use it as a

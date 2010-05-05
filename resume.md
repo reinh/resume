@@ -1,88 +1,79 @@
-# Nathaniel Welch
+Daniel Mayer  
+dan@mayerdan.com  
+503-819-3246  
+821 Maryland Ave NE #305  
+Washington, DC 20002  
 
- * 707-799-8675
- * <nat@natwelch.com>
- * <http://natwelch.com>
+[GitHub](http://github.com/danmayer)  
+[Blog](http://mayerdan.com)  
 
-## Skills Summary
+Skills
+----------------
 
-I am a current student of Computer Science with an interest in communication
-and design. I strive to be a quick learner and both a competent leader and a
-capable worker. I have received the rank of Eagle Scout and am currently an
-active officer of the Cal Poly Linux Users Group. I was awarded Cal Poly's
-Residence Hall Council member of the year for both 2006 and 2007.
+* Ruby
+  * Rails
+  * Sinatra
+  * EventMachine
+  * DataMapper
+  * Custom EventMachine-based protocols
 
-## Education
+* Tools
+  * Linux
+  * OSX
+  * Javascript (JQuery/Prototype)
+  * HTML
+  * AWS
+  * Distributed Computing
+  * Apache
+  * MySql
+  * Postgres
+  * Schemaless DBs (NoSql)
+  * Restful webservice API's
 
-Computer Science Major, English Minor  
-Fall 2006 - Present  
-California Polytechnic State University, San Luis Obispo  
+* Style
+  * Pair Programming
+  * Test-Focused Development
+  * Distributed Teams
+  * Agile team management
+  * Contributor to Ruby OSS software
+  * Active on Github
 
-## Systems Proficiency
+Work Experience
+---------------
+Devver  
+Founder / CTO / Ruby Software Developer  
+April 2008 - Present  (2 years 1 month)  
+Software startup to make the lives of developers easier. Originally, developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  
 
-**Programming Languages**
+* Built accellerated testing tool, using distributed computing services to run developer tests
+* Developed a cloud-based continious integration server and notification services
+* Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
+* Member of a distributed agile team -- practiced daily standups, remote pair programming, and continious integration
+* Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
+* Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments.
 
- > Proficient in: C, Java, PHP, HTML, CSS, SQL (MySql, SQLite), Bash
+Pretheory  
+Founder  
+May 2007 - April 2008  
+Small Denver-based consumer web startup. Built Seekler.com to help people find the best of everything online by created social, community-based top 10 lists on consumer-driven topics or products.  
 
- > Experience with: ML, F#, Ruby, Python
 
-**PC Software**
+Indigio  
+Java Lead Engineer  
+August 2006 - May 2007  
+Developed web sites for Fortune 500 companies. Managed a small Java team with local and international remote employees.  
 
- > I have experience using most modern development tools including Eclipse, Vim, Git and SVN. I have been using Linux for both personal and server use for over six years. I am also knowledgeable using the Adobe Creative Suite and Daz3D's Bryce.
 
-## Experience
+IST  
+Java Software Engineer  
+December 2005 - June 2006  
+Developed full lifecycle of a DOD distributed syncronous infrastructure in Java.  
 
-### iFixit.com, San Luis Obispo CA
 
-#### Software Developer
+Education:  
+University of Colorado  
+Boulder, CO  
+B.S., Computer Science  
+GPA: 3.185  
 
-##### April 2009 - Present
-
- * Helped create a site-wide reputation community, which began with http://ifixit.com/Answers
- * Helped maintain various servers, located on Amazon EC2, and local development machines
-
-### Adobe Systems Incorporated, San Francisco CA
-
-#### Dreamweaver QE Intern
-
-##### Summer 2007 and 2008  
-
- * Tested both daily builds and released versions of Dreamweaver against various operating systems
- * including Mac OSX 10.4, Mac OSX 10.5, Windows Vista, and Windows XP.
- * Helped maintain the Server Matrix, Bug-base, and test a new test case Application
- * Helped develop and test the Web Widgets Feature for Dreamweaver CS4.
-
-### California Polytechnic State University, San Luis Obispo CA  
-
-#### Computer Science Lab Monitor
-
-##### Sep. 2006 to June 2007
-
- * Maintained printers and computers for seven labs.
-
-### Sonoma County Information Systems Department, Santa Rosa CA
-
-#### Intern
-
-##### June 2005 to Sep. 2005 
- 
- * Built and maintained three separate websites, one dealing with unions, one system uptime web application, and one error reporting web form.
-
-### BSA Camp Oljato, Lakeshore CA            
-
-#### Nature Director
-
-##### Summer 2006
-
- * In charge of four staff members and responsible for planning the activities behind and maintaining the entire Nature area at camp, with an average of about 200 kids every week for seven weeks.
- * Updated and revised the Forest Management Plan and organized conservation projects throughout camp.
-
-#### Camp Counselor                     
-
-##### Summer 2002, 2003 and 2004
-
- * Took care of children ages ten to eighteen and responsible for creating and planning daily schedules for my classes.
- * Taught merit badge classes such as wilderness survival, camping, hiking, and others.
- * Dealt with their scoutmasters, which were usually older adults around the age of 40 to 60
- * Dealt with medical emergencies ranging from altitude sickness and dehydration to broken ribs.
-
+References available on request

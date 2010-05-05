@@ -5,9 +5,10 @@ require 'rubygems'
 require 'sinatra'
 require 'less'
 require 'rdiscount'
+require 'maruku'
 
 get '/' do
-   title = "Nathaniel Welch's Resume"
+   title = "Dan Mayer's Resume"
    resume = RDiscount.new(File.read("resume.md"), :smart).to_html
    erubis :index, :locals => { :title => title, :resume => resume }
 end
@@ -17,3 +18,8 @@ get '/style.css' do
    less :style
 end
 
+get '/latex' do
+  content_type 'application/x-latex'
+  doc = Maruku.new(File.read("resume.md"))
+  doc.to_latex_document
+end
