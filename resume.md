@@ -53,7 +53,7 @@ Software startup to make the lives of developers easier. Originally developed ac
 * Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
 * Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments.
 
-__Pretheory__ 
+__Pretheory__  
 Founder  
 May 2007 - April 2008  
 Small Denver-based consumer web startup. Built [Seekler.com](http://seekler.com) to help people find the best of everything online by user generated social, community-based top 10 lists on consumer-driven topics or products.  
