@@ -19,7 +19,8 @@ Heroku.
 * Make tests generic from resume
 * Make the resume file not included in the git repo
 * gem binary and assocatiated commands (http://groups.google.com/group/rails-business/msg/68cf8a890c0d4fc8?pli=1)
-* deploy to personal github page (optional), via rake
+* deploy to personal github page (optional), via rake 
+  * deploy works, but jykll page conversion doesn't work on the current resume.md or even if renamed index.markdown (learn jekll for this)
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
   * http://github.com/rtomayko/rdiscount (current)
