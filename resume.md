@@ -56,8 +56,7 @@ Software startup to make the lives of developers easier. Originally developed ac
 __Pretheory__ 
 Founder  
 May 2007 - April 2008  
-Small Denver-based consumer web startup. Built Seekler.com to help people find the best of everything online by user generated social, community-based top 10 lists on consumer-driven topics or products.  
-* [Seekler.com](http://seekler.com)
+Small Denver-based consumer web startup. Built [Seekler.com](http://seekler.com) to help people find the best of everything online by user generated social, community-based top 10 lists on consumer-driven topics or products.  
 
 __Indigio__  
 Java Lead Engineer  
