@@ -28,5 +28,18 @@ class ResumeTest < Test::Unit::TestCase
     assert last_response.ok?
     assert_match "begin{document}", last_response.body
   end
+
+  def test_it_can_display_markdown
+    get '/markdown'
+    assert last_response.ok?
+    assert_match "Daniel Mayer", last_response.body
+  end
+
+  def test_it_supports_linked_formats
+    get '/'
+    assert_match "HTML", last_response.body
+    assert_match "Latex", last_response.body
+    assert_match "Markdown", last_response.body
+  end
   
 end

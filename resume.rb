@@ -23,3 +23,8 @@ get '/latex' do
   doc = Maruku.new(File.read("resume.md"))
   doc.to_latex_document
 end
+
+get '/markdown' do
+  content_type 'application/markdown'
+  File.read("resume.md")
+end

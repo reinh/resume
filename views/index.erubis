@@ -5,7 +5,7 @@
 </head>
 <body>
    <div id='formats'>
-     Formats: <a href="/">HTML</a> | <a href='latex'>Latex</a>
+     Formats: <a href="/">HTML</a> | <a href='latex'>Latex</a> | <a href='markdown'>Markdown</a>
    </div>
    <div id="resume">
       <%= resume %>
