@@ -13,22 +13,23 @@ Skills
 * Ruby
   * Rails
   * Sinatra
+  * Merb
   * EventMachine
   * DataMapper
   * Custom EventMachine-based protocols
 
 * Tools
   * Linux
-  * OSX
+  * OS X
   * Javascript (JQuery/Prototype)
   * HTML
-  * AWS
+  * Amazon Web Services (Ec2, SimpleDB, S3, SQS)
   * Distributed Computing
   * Apache
-  * MySql
-  * Postgres
+  * MySQL
+  * PostgreSQL
   * Schemaless DBs (NoSql)
-  * Restful webservice API's
+  * RESTul webservice API's
 
 * Style
   * Pair Programming
@@ -42,12 +43,12 @@ Work Experience
 ---------------
 Devver  
 Founder / CTO / Ruby Software Developer  
-April 2008 - Present  (2 years 1 month)  
-Software startup to make the lives of developers easier. Originally, developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  
+April 2008 - April 2010  
+Software startup to make the lives of developers easier. Originally developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  
 
-* Built accellerated testing tool, using distributed computing services to run developer tests
-* Developed a cloud-based continious integration server and notification services
-* Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
+* Built accelerated testing tool, using distributed computing services to run developer tests
+* Developed a cloud-based continuous integration server and notification services
+* Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems.org to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
 * Member of a distributed agile team -- practiced daily standups, remote pair programming, and continious integration
 * Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
 * Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments.
@@ -55,8 +56,8 @@ Software startup to make the lives of developers easier. Originally, developed a
 Pretheory  
 Founder  
 May 2007 - April 2008  
-Small Denver-based consumer web startup. Built Seekler.com to help people find the best of everything online by created social, community-based top 10 lists on consumer-driven topics or products.  
-
+Small Denver-based consumer web startup. Built Seekler.com to help people find the best of everything online by user generated social, community-based top 10 lists on consumer-driven topics or products.  
+* [Seekler.com](http://seekler.com)
 
 Indigio  
 Java Lead Engineer  
@@ -64,10 +65,10 @@ August 2006 - May 2007
 Developed web sites for Fortune 500 companies. Managed a small Java team with local and international remote employees.  
 
 
-IST  
+Impact Science & Technology (IST)  
 Java Software Engineer  
 December 2005 - June 2006  
-Developed full lifecycle of a DOD distributed syncronous infrastructure in Java.  
+Developed full lifecycle of a DOD distributed synchronous infrastructure in Java.  
 
 
 Education:  
