@@ -1,18 +1,35 @@
 require 'rake/testtask'
 
-task :default => [:build]
+task :default => ['test:all']
 
 task :build do
 	# run sinatra locally...
 end
 
 namespace :test do
-  Rake::TestTask.new(:rack) do |t|
-    t.libs << "test"
-    t.pattern = "test/**/*_test.rb"
-    t.verbose = true
-  end
-  Rake::Task["test:rack"].comment = "Run the Rack::Test tests in test/rack"
+
+task :default => 'morning:turn_off_alarm'
+
+desc "run all tests"
+task :all do
+  Rake::Task['test:rack'].invoke
+  Rake::Task['test:unit'].invoke
+end
+
+desc "run rack tests"
+Rake::TestTask.new(:rack) do |t|
+  t.libs << "test"
+  t.pattern = "test/rack/**/*_test.rb"
+  t.verbose = true
+end
+
+desc "run unit tests"
+Rake::TestTask.new(:unit) do |t|
+  t.libs << "test"
+  t.pattern = "test/unit/**/*_test.rb"
+  t.verbose = true
+end
+
 end
 
 namespace :deploy do

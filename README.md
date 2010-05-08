@@ -20,7 +20,8 @@ Heroku.
 * Make the resume file not included in the git repo
 * gem binary and assocatiated commands (http://groups.google.com/group/rails-business/msg/68cf8a890c0d4fc8?pli=1)
 * deploy to personal github page (optional), via rake 
-  * deploy works, but jykll page conversion doesn't work on the current resume.md or even if renamed index.markdown (learn jekll for this)
+  * Deploy works, but jykll page conversion doesn't work on the current resume.md or even if renamed index.markdown (learn jekll for this)
+  * Perhaps just allow a index.html page to be rendered via a rake task, which then will be checked in but works for Github Pages
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
   * http://github.com/rtomayko/rdiscount (current)
@@ -32,6 +33,12 @@ Heroku.
 * simpler automated deploy to heroku (possibly with staging server)
 * possibly merge with a resume generator which after filling out some info via forms or yaml can generate varios resumes in all formats
   * Users could submit templates / stylesheets allowing for differently formatted resumes
+* standardize gem paths lib/resume/etc
+* rake task that generates proper single use gemfile and executable
+* make sinatra app depend on the gem
+* move the configurable files to some more explainitory path than root.
+* provide a open site which brings to the url in contact 
+* better filenames for the downloaded resume in various formats (currently saves as latex and markdown)
 
 ## License
 
