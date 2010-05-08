@@ -59,10 +59,17 @@ namespace :deploy do
   end
 
   desc "Deploy to Github pages."
-  task :github do
+  task :github => [:render_for_github] do
     # this assumes you have made a remote called github
     # `git remote add github git@github.com:username/username.github.com.git`
     # this should push your resume to http://username.github.com
     `git push github master`
   end
+end
+
+desc "render github index page, which can be displayed at user.github.com"
+task :render_for_github do	
+    require File.join(File.dirname(__FILE__), 'resume_gem')
+    resume = Resume.new('resume.yml')
+    resume.write_html_and_css_to_disk('./')
 end

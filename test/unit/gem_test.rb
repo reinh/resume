@@ -13,6 +13,12 @@ class ResumeGemTest < Test::Unit::TestCase
     assert_equal "phone: 511-2305\nemail:test@test.com", resume.contact_information
   end
 
+  def test_contact_information_includes_resume_url
+    resume = Resume.new({'contact_information' => "phone: 511-2305\nemail:test@test.com",
+                        'resume_url' => 'http://resume.com'})
+    assert_match "http://resume.com", resume.contact_information
+  end
+
   def test_text
     resume = Resume.new({})
     assert_match "Daniel Mayer", resume.text

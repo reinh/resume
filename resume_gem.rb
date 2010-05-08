@@ -18,7 +18,14 @@ class Resume
   end
 
   def contact_information
-    @resume['contact_information']
+    contact_info = @resume['contact_information']
+    contact_info += "\nresume url: #{@resume['resume_url']}" if @resume['resume_url']
+    contact_info
+  end
+
+  def open_resume_site
+    url = @resume['resume_url']
+    Launchy::Browser.new.visit(url)
   end
 
   def text
