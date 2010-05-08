@@ -39,6 +39,7 @@ Heroku.
 * move the configurable files to some more explainitory path than root.
 * provide a open site which brings to the url in contact 
 * better filenames for the downloaded resume in various formats (currently saves as latex and markdown)
+* update readme to reflect changes, updates, and new goals of the project
 
 ## License
 

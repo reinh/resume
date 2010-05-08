@@ -37,15 +37,20 @@ class Resume
     eruby.result(binding())    
   end
 
-  def open_html
-    FileUtils.mkdir_p 'tmp' unless File.exists?('./tmp')
+  def write_html_and_css_to_disk(root_path = './tmp')
+    FileUtils.mkdir_p root_path unless File.exists?(root_path)
  
     css = Less::Engine.new(File.new("views/style.less")).to_css
-    tmp_css = './tmp/style.css'
+    tmp_css = File.join(root_path,'style.css')
     File.open(tmp_css, 'w') {|f| f.write(css) }
 
-    tmp_file = './tmp/resume.html'
+    tmp_file = File.join(root_path,'index.html')
     File.open(tmp_file, 'w') {|f| f.write(self.html) }
+    tmp_file
+  end
+
+  def open_html
+    tmp_file = write_html_and_css_to_disk()
     Launchy::Browser.new.visit("file://"+File.expand_path(tmp_file))
   end
 

@@ -7,29 +7,32 @@ task :build do
 end
 
 namespace :test do
+  desc "run all tests"
+  task :all do
+    Rake::Task['test:rack'].invoke
+    Rake::Task['test:unit'].invoke
+  end
 
-task :default => 'morning:turn_off_alarm'
+  desc "run rack tests"
+  Rake::TestTask.new(:rack) do |t|
+    t.libs << "test"
+    t.pattern = "test/rack/**/*_test.rb"
+    t.verbose = true
+  end
 
-desc "run all tests"
-task :all do
-  Rake::Task['test:rack'].invoke
-  Rake::Task['test:unit'].invoke
+  desc "run unit tests"
+  Rake::TestTask.new(:unit) do |t|
+    t.libs << "test"
+    t.pattern = "test/unit/**/*_test.rb"
+    t.verbose = true
+  end
 end
 
-desc "run rack tests"
-Rake::TestTask.new(:rack) do |t|
-  t.libs << "test"
-  t.pattern = "test/rack/**/*_test.rb"
-  t.verbose = true
-end
-
-desc "run unit tests"
-Rake::TestTask.new(:unit) do |t|
-  t.libs << "test"
-  t.pattern = "test/unit/**/*_test.rb"
-  t.verbose = true
-end
-
+desc "render github index page, which can be displayed at user.github.com"
+task :render_for_github do	
+    require File.join(File.dirname(__FILE__), 'resume_gem')
+    resume = Resume.new('resume.yml')
+    resume.write_html_and_css_to_disk('./')
 end
 
 namespace :deploy do
