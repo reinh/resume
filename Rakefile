@@ -10,12 +10,14 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "danmayer-resume"
+    gem_name = "danmayer-resume"
+    gemspec.name = gem_name
     gemspec.summary = "Resume gem"
     gemspec.description = "A gem for Dan Mayer's resume"
     gemspec.email = "dan@mayerdan.com"
     gemspec.homepage = "http://github.com/danmayer/Resume"
     gemspec.authors = ["Dan Mayer"]
+    gemspec.executables = [gem_name]
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
@@ -67,23 +69,6 @@ end
 namespace :deploy do
   desc "Deploy to Heroku."
   task :heroku do
-    # 	require 'heroku'
-    # 	require 'heroku/command'
-    # 	user, pass = File.read(File.expand_path("~/.heroku/credentials")).split("\n")
-    # 	heroku = Heroku::Client.new(user, pass)
-
-    # 	cmd = Heroku::Command::BaseWithApp.new([])
-    # 	remotes = cmd.git_remotes(File.dirname(__FILE__) + "/../..")
-    
-    # 	remote, app = remotes.detect {|key, value| value == (ENV['APP'] || cmd.app)}
-    
-    # 	if remote.nil?
-    # 		raise "Could not find a git remote for the '#{ENV['APP']}' app"
-    # 	end
-    
-    # 	`git push #{remote} master`
-    
-    # 	heroku.restart(app)
     `git push heroku master`
   end
 
@@ -96,10 +81,12 @@ namespace :deploy do
   end
 end
 
-desc "render github index page, which can be displayed at user.github.com"
-task :render_for_github do	
+namespace :github do
+  desc "render github index page, which can be displayed at user.github.com"
+  task :render_pages do	
     require File.join(File.dirname(__FILE__), 'resume_gem')
     resume = Resume.new('resume.yml')
     puts "writing resume github index files to disk"
     resume.write_html_and_css_to_disk('./')
+  end
 end

@@ -44,6 +44,7 @@ OPTIONAL (GitHub Personal Page Deploy)
   5. Visit http://user.github.com
 
 OPTIONAL (Publish personal resume gem)  
+  1. Edit resume.yml to include your information. 
   1. Wait cause this is currently in progress.
 
 ## TODOs

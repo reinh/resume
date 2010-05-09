@@ -10,7 +10,7 @@ require 'maruku'
 get '/' do
    title = "Dan Mayer's Resume"
    resume = RDiscount.new(File.read("resume.md"), :smart).to_html
-   erubis :index, :locals => { :title => title, :resume => resume }
+   erubis :index, :locals => { :title => title, :resume => resume, :formats => true }
 end
 
 get '/style.css' do
