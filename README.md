@@ -25,14 +25,14 @@ Contributions and ideas for the resume app are welcome, anything that makes the 
 ## Installation
 
 Basic resume in multiple formats on Heroku  
- 1. Fork this project
- 2. Install the gems (see the .gems file)
- 3. To deploy to Heroku, also install the heroku gem, and intialize a heroku project
-   * Run ` rake heroku:create name=batman-resume`
- 4. type `rake run` or `ruby ./resume.rb` to run sinatra locally (http://localhost:4567). 
- 5. Edit views/style.less to make your resume look pretty.
- 6. Edit everything until it looks exactly how you like it. I suggest using Dingus for testing your Markdown (http://daringfireball.net/projects/markdown/dingus)
- 7. `rake deploy:heroku` to push your resume to the internet on heroku (http://batman-resume.heroku.com).
+1. Fork this project
+2. Install the gems (see the .gems file)
+3. To deploy to Heroku, also install the heroku gem, and intialize a heroku project
+  * Run ` rake heroku:create name=batman-resume`
+4. type `rake run` or `ruby ./resume.rb` to run sinatra locally (http://localhost:4567). 
+5. Edit views/style.less to make your resume look pretty.
+6. Edit everything until it looks exactly how you like it. I suggest using Dingus for testing your Markdown (http://daringfireball.net/projects/markdown/dingus)
+7. `rake deploy:heroku` to push your resume to the internet on heroku (http://batman-resume.heroku.com).
 
 OPTIONAL (GitHub Personal Page Deploy)  
 
