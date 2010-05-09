@@ -7,6 +7,20 @@ task :run do
   exec "ruby resume.rb"
 end
 
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "danmayer-resume"
+    gemspec.summary = "Resume gem"
+    gemspec.description = "A gem for Dan Mayer's resume"
+    gemspec.email = "dan@mayerdan.com"
+    gemspec.homepage = "http://github.com/danmayer/Resume"
+    gemspec.authors = ["Dan Mayer"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: gem install jeweler"
+end
+
 desc "run all tests"
 task :test do
   Rake::Task['test:rack'].invoke

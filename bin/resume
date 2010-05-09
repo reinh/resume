@@ -1,0 +1,40 @@
+#! /usr/bin/env ruby
+require 'main'
+require 'yaml'
+
+Main do
+  option('open_html', 'o') do
+    argument :required
+    cast :boolean
+    default false
+  end
+
+  option('contact_info', 'c') do
+    cast :boolean
+    default false
+  end
+
+  option('resume_site', 's') do
+    cast :boolean
+    default false
+  end
+
+  def resume_run()
+    require File.join(File.dirname(__FILE__), '..', 'resume_gem')
+    resume = Resume.new('resume.yml')
+    if params['open_html'].value
+      resume.open_html
+    elsif params['contact_info'].value
+      resume.contact_information
+    elsif params['resume_site'].value
+      resume.open_resume_site
+    else	
+      resume.mission_statement
+    end 
+  end
+
+  def run
+    puts resume_run
+  end
+
+end
