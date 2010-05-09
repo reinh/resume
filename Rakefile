@@ -1,18 +1,19 @@
 require 'rake/testtask'
 
-task :default => ['test:all']
+task :default => ['test']
 
-task :build do
-	# run sinatra locally...
+desc "run sintra server locally"
+task :run do
+  exec "ruby resume.rb"
+end
+
+desc "run all tests"
+task :test do
+  Rake::Task['test:rack'].invoke
+  Rake::Task['test:unit'].invoke
 end
 
 namespace :test do
-  desc "run all tests"
-  task :all do
-    Rake::Task['test:rack'].invoke
-    Rake::Task['test:unit'].invoke
-  end
-
   desc "run rack tests"
   Rake::TestTask.new(:rack) do |t|
     t.libs << "test"
@@ -33,6 +34,20 @@ task :render_for_github do
     require File.join(File.dirname(__FILE__), 'resume_gem')
     resume = Resume.new('resume.yml')
     resume.write_html_and_css_to_disk('./')
+end
+
+namespace :heroku do
+
+  desc "create a heroku project for your resume"
+  task :create do
+    unless ENV.include?("name")	
+      raise "usage: rake heroku:create name=PROJECT_NAME # example danmayer-resume\n" 
+    end
+    project_name = ENV['name']
+    puts "creating heroku project #{project_name}"
+    puts `heroku create #{project_name}`
+  end
+
 end
 
 namespace :deploy do

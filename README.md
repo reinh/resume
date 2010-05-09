@@ -4,6 +4,19 @@ This started as just a simple place to store a markdown format of my resume,
 and now it's turned into an easy way to host your resume using sinatra and
 Heroku.
 
+It was then extended as a way to server your resume in multiple formats (LaTex, MarkDown, HTML, and soon PDF).
+It also became a way to easily update and manager your github user page (user.github.com). Since this is powered by
+MarkDown it also integrates well with GitHubs jobs search (http://github.com/blog/553-looking-for-a-job-let-github-help).
+
+Lastly, it packages up your resume and info into an installable Rubygem. This was just a clever idea I saw suggested by
+ Eric Davis and figured it would be cool to implement (http://groups.google.com/group/rails-business/msg/68cf8a890c0d4fc8?pli=1).
+This focuses on making it as simple and easy to update and publish your resume as possible, while offering it in a variety of formats.
+
+Currently it is best to fork the project and override a few of the data files to customize the project for yourself.
+At the moment you need to override resume.yml and resume.md in the root directory with your own info.
+
+Contributions and ideas for the resume app are welcome, anything that makes the process simpler would be encouraged.
+
 # Authors
 
 * Nathaniel "Nat" Welch (icco)
@@ -12,10 +25,10 @@ Heroku.
 ## Installation
 
  1. Fork this project
- 2. Install the gems sinatra ( >= 1.0), rdiscount, erubis, and less
+ 2. Install the gems (see the .gems file)
  3. To deploy to Heroku, also install the heroku gem
-   * Run "heroku create"
- 4. type "rake" or ./main.rb to run locally. 
+   * Run ` rake heroku:create name=batman-resume`
+ 4. type "rake run" or `ruby ./resume.rb` to run locally. 
  5. Edit views/style.less to make your resume look pretty.
  6. "rake deploy" to push your resume to the internet.
 
