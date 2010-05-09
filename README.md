@@ -25,6 +25,7 @@ Contributions and ideas for the resume app are welcome, anything that makes the 
 ## Installation
 
 Basic resume in multiple formats on Heroku  
+
 1. Fork this project
 2. Install the gems (see the .gems file)
 3. To deploy to Heroku, also install the heroku gem, and intialize a heroku project
@@ -44,8 +45,9 @@ OPTIONAL (GitHub Personal Page Deploy)
   5. Visit http://user.github.com
 
 OPTIONAL (Publish personal resume gem)  
-  1. Edit resume.yml to include your information. 
-  1. Wait cause this is currently in progress.
+
+1. Edit resume.yml to include your information.
+2. Wait cause this is currently in progress.
 
 ## TODOs
 
