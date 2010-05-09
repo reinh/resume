@@ -51,7 +51,9 @@ OPTIONAL (Publish personal resume gem)
 
 * Make tests generic from resume
 * Make the resume file not included in the git repo
-* gem binary and assocatiated commands (http://groups.google.com/group/rails-business/msg/68cf8a890c0d4fc8?pli=1)
+* update readme to reflect changes, updates, and new goals of the project (and likely update rake task names etc)
+* move the configurable files to some more explainitory path than root. 
+* standardize gem paths lib/resume/etc
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
   * http://github.com/rtomayko/rdiscount (current)
@@ -60,17 +62,13 @@ OPTIONAL (Publish personal resume gem)
   * http://github.com/alphabetum/pandoc-ruby (many formats RTF docbook man ODF slides etc)
     * http://railsforum.com/viewtopic.php?id=35844
   * http://rtomayko.github.com/ronn/ (markdown to man page)
-* simpler automated deploy to heroku (possibly with staging server)
 * possibly merge with a resume generator which after filling out some info via forms or yaml can generate varios resumes in all formats
   * Users could submit templates / stylesheets allowing for differently formatted resumes
-* standardize gem paths lib/resume/etc
+
 * rake task that generates proper single use gemfile and executable
 * make sinatra app depend on the gem
-* move the configurable files to some more explainitory path than root. 
 * better filenames for the downloaded resume in various formats (currently saves as latex and markdown)
-* update readme to reflect changes, updates, and new goals of the project
-* change render options to disable formats if not a sinatra version of the page, render static as an option perhaps
-  * or you could have the resume root which is used for opening the site via the gem be used as the root url for all the formats
+
 
 ## License
 
