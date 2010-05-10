@@ -67,6 +67,7 @@ OPTIONAL (Publish personal resume gem)
 * make sinatra app depend on the gem
 * better filenames for the downloaded resume in various formats (currently saves as latex and markdown)
 * fix the base path stuff refactor it out.
+* look into better tmp file libs
 
 
 ## License
