@@ -19,6 +19,13 @@ begin
     gemspec.homepage = "http://github.com/danmayer/Resume"
     gemspec.authors = ["Dan Mayer"]
     gemspec.executables = [GEM_NAME]
+    gemspec.add_development_dependency "jeweler"
+    gemspec.add_dependency "main"
+    gemspec.add_dependency "maruku"
+    gemspec.add_dependency "sinatra", '~> 1.0'
+    gemspec.add_dependency "erubis"
+    gemspec.add_dependency 'less'
+    gemspec.add_dependency 'launchy'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
