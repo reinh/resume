@@ -54,8 +54,6 @@ OPTIONAL (Publish personal resume gem)
 * Make tests generic from resume
 * Make the resume file not included in the git repo
 * update readme to reflect changes, updates, and new goals of the project (and likely update rake task names etc)
-* move the configurable files to some more explainitory path than root. 
-* standardize gem paths lib/resume/etc
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
   * http://github.com/rtomayko/rdiscount (current)

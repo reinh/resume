@@ -9,8 +9,9 @@ require 'erubis'
 class Resume
 
   def initialize(resume_data = 'resume.yml', resume_content = 'resume.md')
-    @resume = resume_data.is_a?(String) ? YAML::load_file(resume_data) : resume_data
-    @resume_content = resume_content.is_a?(String) ? File.read(resume_content) : resume_content
+    base = File.join(File.dirname(__FILE__),'..','data')
+    @resume = resume_data.is_a?(String) ? YAML::load_file(File.join(base,resume_data)) : resume_data
+    @resume_content = resume_content.is_a?(String) ? File.read(File.join(base,resume_content)) : resume_content
   end
 
   def mission_statement

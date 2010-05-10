@@ -1,4 +1,4 @@
-require 'resume_gem'
+require 'lib/resume_gem'
 require 'test/unit'
 
 class ResumeGemTest < Test::Unit::TestCase
