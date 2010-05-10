@@ -13,7 +13,7 @@ Lastly, it packages up your resume and info into an installable Rubygem. This wa
 This focuses on making it as simple and easy to update and publish your resume as possible, while offering it in a variety of formats.  
 
 Currently it is best to fork the project and override a few of the data files to customize the project for yourself.  
-At the moment you need to override resume.yml and resume.md in the root directory with your own info.  
+At the moment you need to override data/resume.yml and data/resume.md in the root directory with your own info.  
 
 Contributions and ideas for the resume app are welcome, anything that makes the process simpler would be encouraged.  
 
@@ -39,21 +39,25 @@ OPTIONAL (GitHub Personal Page Deploy)
 
 * Deploy to github personal page (http://username.github.com)
   1. Add the github remote repo for your pages (like so `git remote add github git@github.com:user/user.github.com.git`)
-  2. run `rake render_for_github`, which will render a index.html and style.css to your root directory
+  2. run `rake github:render_pages `, which will render a index.html and style.css to your root directory
   3. run `git add index.html` and `git add style.css` and `git commit -a -m "adding github pages files"
   4. `rake deploy:github`
   5. Visit http://user.github.com
 
 OPTIONAL (Publish personal resume gem)  
 
-1. Edit resume.yml to include your information.
-2. Wait cause this is currently in progress.
+1. Edit data/resume.yml & data/resume.md to include your information.
+2. Alter the Rakefile edit GEM_NAME, to reflect your resume name, update the gemspec author, contect, website info
+3. run `rake build` to generate the gem on your system
+   * this will generate a exe in bin of GEM_NAME, but you don't need to check that in git
+4. run `rake install` to install the gem locally and make sure it works as expected
+5. run `rake gemcutter:release` to release your new customized gem on gemcutter.
+6. See example resume gem http://rubygems.org/gems/danmayer-resume
 
 ## TODOs
 
 * Make tests generic from resume
 * Make the resume file not included in the git repo
-* update readme to reflect changes, updates, and new goals of the project (and likely update rake task names etc)
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
   * http://github.com/rtomayko/rdiscount (current)
