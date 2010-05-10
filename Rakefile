@@ -2,6 +2,8 @@ require 'rake/testtask'
 
 task :default => ['test']
 
+GEM_NAME = "danmayer-resume"
+
 desc "run sintra server locally"
 task :run do
   exec "ruby resume.rb"
@@ -10,17 +12,27 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gem_name = "danmayer-resume"
-    gemspec.name = gem_name
+    gemspec.name = GEM_NAME
     gemspec.summary = "Resume gem"
     gemspec.description = "A gem for Dan Mayer's resume"
     gemspec.email = "dan@mayerdan.com"
     gemspec.homepage = "http://github.com/danmayer/Resume"
     gemspec.authors = ["Dan Mayer"]
-    gemspec.executables = [gem_name]
+    gemspec.executables = [GEM_NAME]
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
+end
+
+task :build => [:generate_exe]
+
+desc "generate the gem executable"
+task :generate_exe do
+  puts "copying executable from template"
+  `cp lib/resume_exe bin/#{GEM_NAME}`
+  puts "giving new file chmod +x"
+  `chmod o+x bin/#{GEM_NAME}`
 end
 
 desc "run all tests"

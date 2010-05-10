@@ -64,7 +64,6 @@ OPTIONAL (Publish personal resume gem)
   * http://rtomayko.github.com/ronn/ (markdown to man page)
 * possibly merge with a resume generator which after filling out some info via forms or yaml can generate varios resumes in all formats
   * Users could submit templates / stylesheets allowing for differently formatted resumes
-
 * rake task that generates proper single use gemfile and executable
 * make sinatra app depend on the gem
 * better filenames for the downloaded resume in various formats (currently saves as latex and markdown)

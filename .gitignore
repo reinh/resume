@@ -1,3 +1,6 @@
 *.swp
 ./tmp
 tmp/
+bin/*
+pkg
+*.gemspec
