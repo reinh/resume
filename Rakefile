@@ -26,6 +26,7 @@ begin
     gemspec.add_dependency "erubis"
     gemspec.add_dependency 'less'
     gemspec.add_dependency 'launchy'
+    gemspec.add_dependency 'rdiscount'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
