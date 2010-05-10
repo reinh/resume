@@ -46,9 +46,11 @@ class Resume
   end
 
   def write_html_and_css_to_disk(root_path = './tmp')
+    base = File.join(File.dirname(__FILE__),'..')
+    root_path = File.join(base,root_path)
     FileUtils.mkdir_p root_path unless File.exists?(root_path)
  
-    css = Less::Engine.new(File.new("views/style.less")).to_css
+    css = Less::Engine.new(File.new(File.join(base,"views/style.less"))).to_css
     tmp_css = File.join(root_path,'style.css')
     File.open(tmp_css, 'w') {|f| f.write(css) }
 
