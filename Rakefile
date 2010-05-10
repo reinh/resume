@@ -68,7 +68,7 @@ end
 desc "render github index page, which can be displayed at user.github.com"
 task :render_for_github do	
     require File.join(File.dirname(__FILE__), 'lib', 'resume_gem')
-    resume = Resume.new('resume.yml')
+    resume = Resume.new('data/resume.yml')
     resume.write_html_and_css_to_disk('./')
 end
 
@@ -104,7 +104,7 @@ end
 namespace :github do
   desc "render github index page, which can be displayed at user.github.com"
   task :render_pages do	
-    require File.join(File.dirname(__FILE__), 'resume_gem')
+    require File.join(File.dirname(__FILE__), 'lib', 'resume_gem')
     resume = Resume.new('resume.yml')
     puts "writing resume github index files to disk"
     resume.write_html_and_css_to_disk('./')
