@@ -64,7 +64,7 @@ OPTIONAL (Publish personal resume gem)
   * http://github.com/alphabetum/pandoc-ruby (many formats RTF docbook man ODF slides etc)
     * http://railsforum.com/viewtopic.php?id=35844
   * http://rtomayko.github.com/ronn/ (markdown to man page)
-  * PDF now works on OSX via pdflatex, but it doesn't work on Heroku for some reason
+  * PDF now works on OSX via pdflatex, but it doesn't work on Heroku for some reason (1.8.6 has pdftex but missing fmt files, 1.8.7 stack doesnt have app)
 * possibly merge with a resume generator which after filling out some info via forms or yaml can generate varios resumes in all formats
   * Users could submit templates / stylesheets allowing for differently formatted resumes
 * make sinatra app depend on the gem
