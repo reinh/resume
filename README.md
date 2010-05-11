@@ -60,12 +60,11 @@ OPTIONAL (Publish personal resume gem)
 * Make the resume file not included in the git repo
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
-  * http://github.com/rtomayko/rdiscount (current)
   * http://kramdown.rubyforge.org/
-  * http://maruku.rubyforge.org/ (pdf support)
   * http://github.com/alphabetum/pandoc-ruby (many formats RTF docbook man ODF slides etc)
     * http://railsforum.com/viewtopic.php?id=35844
   * http://rtomayko.github.com/ronn/ (markdown to man page)
+  * PDF now works on OSX via pdflatex, but it doesn't work on Heroku for some reason
 * possibly merge with a resume generator which after filling out some info via forms or yaml can generate varios resumes in all formats
   * Users could submit templates / stylesheets allowing for differently formatted resumes
 * make sinatra app depend on the gem
