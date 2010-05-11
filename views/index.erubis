@@ -12,5 +12,9 @@
    <div id="resume">
       <%= resume %>
    </div>
+   </br>
+   <div id='footer'>
+     This resume is Ruby, powered by <a href="http://github.com/danmayer/Resume">Ruby Resume</a>.
+   </div>
 </body>
 </html>

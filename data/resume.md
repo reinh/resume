@@ -51,17 +51,19 @@ Software startup to make the lives of developers easier. Originally developed ac
 * Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems.org to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
 * Member of a distributed agile team -- practiced daily standups, remote pair programming, and continious integration
 * Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
-* Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments.
+* Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments
 
 __Pretheory__  
 Founder  
 May 2007 - April 2008  
-Small Denver-based consumer web startup. Built [Seekler.com](http://seekler.com) to help people find the best of everything online by user generated social, community-based top 10 lists on consumer-driven topics or products.  
+Small Denver-based consumer web startup. Built [Seekler.com](http://seekler.com) to help people find the best of everything online by user generated, community-based top 10 lists on topics or products. Seekler was a social way to rank things with friends or the entire community.  
 
 __Indigio__  
 Java Lead Engineer  
 August 2006 - May 2007  
 Developed web sites for Fortune 500 companies. Managed a small Java team with local and international remote employees.  
+
+* Developed and deployed large scale newspaper, real estate, and car rental companies Java sites
 
 
 __Impact Science & Technology (IST)__  
