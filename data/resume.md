@@ -49,7 +49,7 @@ Software startup to make the lives of developers easier. Originally developed ac
 * Built accelerated testing tool, using distributed computing services to run developer tests
 * Developed a cloud-based continuous integration server and notification services
 * Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems.org to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
-* Member of a distributed agile team -- practiced daily standups, remote pair programming, and continious integration
+* Member of a distributed agile team -- practiced daily standups, remote pair programming, and continuous integration
 * Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
 * Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments
 
