@@ -29,6 +29,20 @@ get '/markdown' do
   resume_data
 end
 
+get '/pdf' do
+  #pdflatex '#{job}.tex' -interaction=nonstopmode "+    "'-output-directory=#{dir}' "
+  content_type 'application/x-latex'
+  pdf_file = 'tmp/resume.pdf'
+  latex_file = 'tmp/resume.tex'
+
+  return File.read(pdf_file) if File.exists?(pdf_file)
+  doc = Maruku.new(resume_data)
+  tex = doc.to_latex_document
+  File.open(latex_file, 'w') {|f| f.write(tex) }
+  `pdflatex #{latex_file} -interaction=nonstopmode -output-directory=tmp` #'
+  File.read(pdf_file)
+end
+
 def resume_data
   File.read("data/resume.md")
 end
