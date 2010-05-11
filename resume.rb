@@ -39,7 +39,7 @@ get '/pdf' do
   doc = Maruku.new(resume_data)
   tex = doc.to_latex_document
   File.open(latex_file, 'w') {|f| f.write(tex) }
-  `pdflatex #{latex_file} -interaction=nonstopmode -output-directory=tmp` #'
+  `cd tmp && pdflatex resume.tex -interaction=nonstopmode` #'
   File.read(pdf_file)
 end
 
