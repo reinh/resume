@@ -1,4 +1,5 @@
 require 'rake/testtask'
+require 'fileutils'
 
 task :default => ['test']
 
@@ -37,6 +38,9 @@ task :build => [:generate_exe]
 
 desc "generate the gem executable"
 task :generate_exe do
+  puts "making bin folder if it doesn't exist"
+  bin_folder = File.join(File.dirname(__FILE__), 'bin')
+  FileUtils.mkdir_p(bin_folder) unless File.exists?(bin_folder)
   puts "copying executable from template"
   `cp lib/resume_exe bin/#{GEM_NAME}`
   puts "giving new file chmod +x"
