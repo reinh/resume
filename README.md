@@ -57,6 +57,7 @@ OPTIONAL (Publish personal resume gem)
 ## TODOs
 
 * Make tests generic from resume
+* Title is currently hard coded in the resume.rb file, have it either parse it from the markdown or get it from resume.yml
 * Make the resume file not included in the git repo
 * fork me on github corner banner, can be displayed on html, but not rendered to other formats
 * automatic conversion to various formats HTML, LaTeX, PDF, and allow downloading in any of the formats
