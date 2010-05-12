@@ -8,7 +8,7 @@ require 'rdiscount'
 require 'maruku'
 
 get '/' do
-   title = "Dan Mayer's Resume"
+   title = resume_data.lines.first.strip
    resume = RDiscount.new(resume_data, :smart).to_html
    erubis :index, :locals => { :title => title, :resume => resume, :formats => true }
 end
@@ -29,8 +29,9 @@ get '/markdown' do
   resume_data
 end
 
+# note this only works if pdflatex is installed which is part of most LaTeX packages, but doesn't work on Heroku
+# TODO if this ever works on heroku clean it up and add caching
 get '/pdf' do
-  #pdflatex '#{job}.tex' -interaction=nonstopmode "+    "'-output-directory=#{dir}' "
   content_type 'application/x-latex'
   pdf_file = 'tmp/resume.pdf'
   latex_file = 'tmp/resume.tex'
