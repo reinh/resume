@@ -44,7 +44,7 @@ OPTIONAL (GitHub Personal Page Deploy)
   4. `rake deploy:github`
   5. Visit http://user.github.com
 
-OPTIONAL (Publish personal resume gem)  
+NOT RECOMMENDED (Publish personal resume gem), NOT recommended some people find this to apparently be the end of the world and are [pretty upset about it](http://www.mayerdan.com/2010/05/introducing_ruby_resume_a_proj.php) note the comments.
 
 1. Edit data/resume.yml & data/resume.md to include your information.
 2. Alter the Rakefile edit GEM_NAME, to reflect your resume name, update the gemspec author, contect, website info
