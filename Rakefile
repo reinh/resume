@@ -72,7 +72,7 @@ end
 desc "render github index page, which can be displayed at user.github.com"
 task :render_for_github do	
     require File.join(File.dirname(__FILE__), 'lib', 'resume_gem')
-    resume = Resume.new('data/resume.yml')
+    resume = Resume.new('resume.yml')
     resume.write_html_and_css_to_disk('./')
 end
 
