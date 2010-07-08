@@ -13,6 +13,12 @@ body { color: #000000; }
   font-family: serif;
   background-color: #f2f2f2;
 }
+#footer {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: serif;
+}
 #resume {
   width: 700px;
   margin-left: auto;
