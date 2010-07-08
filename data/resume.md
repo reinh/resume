@@ -41,10 +41,10 @@ Skills
 
 Work Experience
 ---------------
-__LivingSocial__
-Software Developer
-June 2010 - Current
-Working with a small team of developers to grow LivingSocial. Working on mobile apps, mobile site, APIs, and backend tools.
+__LivingSocial__  
+Software Developer  
+June 2010 - Current  
+Working with a small team of developers to grow LivingSocial. Working on mobile apps, mobile site, APIs, and backend tools.  
 
 __Devver__  
 Founder / CTO / Ruby Software Developer  
