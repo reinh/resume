@@ -95,8 +95,8 @@ HISTORY
     collaborating with and representing Hashrocket's clients in planning and
     implementation.
 
-    Provided long-term on-site Ruby and Agile consultant for Fortune 500
-    buniness, training their development and management teams and assisting in
+    Provided long-term on-site Ruby and Agile consulting for a Fortune 500
+    company, training their development and management teams and assisting in
     their transition from ASP.NET to Rails.
 
     Contact: Obie Fernandez, CEO, <obie@hashrocket.com>  
