@@ -1,87 +1,111 @@
-Daniel Mayer  
-dan@mayerdan.com  
-503-819-3246  
-821 Maryland Ave NE #305  
-Washington, DC 20002  
+rein(7) -- software developer based in Portland, Oregon
+=============
 
-[GitHub](http://github.com/danmayer)  
-[Blog](http://mayerdan.com)  
+REIN HENRICHS  
+<reinh@reinh.com>  
+503-784-0697  
+1200 NW Marshal St. #4210  
+Portland, OR 97209  
 
-Skills
-----------------
+SYNOPSIS
+--------
 
-* Ruby
-  * Rails
-  * Sinatra
-  * Merb
-  * EventMachine
-  * DataMapper
-  * Custom EventMachine-based protocols
+Rein is a senior software developer with experience ranging from web
+application design and development to systems configuration management.
 
-* Tools
-  * Linux
-  * OS X
-  * Javascript (JQuery/Prototype)
-  * HTML
-  * Amazon Web Services (Ec2, SimpleDB, S3, SQS)
-  * Distributed Computing
-  * Apache
-  * MySQL
-  * PostgreSQL
-  * Schemaless DBs (NoSql)
-  * RESTul webservice API's
+He has lead teams using agile methods, contributed to and maintained several
+popular open source projects, and some other awesome stuff too.
 
-* Style
-  * Pair Programming
-  * Test-Focused Development
-  * Distributed Teams
-  * Agile team management
-  * Contributor to Ruby OSS software
-  * Active on Github
+OPTIONS
+-------
 
-Work Experience
----------------
-__LivingSocial__  
-Software Developer  
-June 2010 - Current  
-Working with a small team of developers to grow LivingSocial. Working on mobile apps, mobile site, APIs, and backend tools.  
+  * --ruby:
+    Rails, Sinatra, Merb, DataMapper, MRI, YARV, Rubinius, jRuby
 
-__Devver__  
-Founder / CTO / Ruby Software Developer  
-April 2008 - April 2010  
-Software startup to make the lives of developers easier. Originally developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  
+  * --javascript:
+    Ajax, jQuery, Prototype/Scriptaculous
 
-* Built accelerated testing tool, using distributed computing services to run developer tests
-* Developed a cloud-based continuous integration server and notification services
-* Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems.org to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
-* Member of a distributed agile team -- practiced daily standups, remote pair programming, and continuous integration
-* Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
-* Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments
+  * --other:
+    Haskell, Erlang, Python, Bash
 
-__Pretheory__  
-Founder  
-May 2007 - April 2008  
-Small Denver-based consumer web startup. Built [Seekler.com](http://seekler.com) to help people find the best of everything online by user generated, community-based top 10 lists on topics or products. Seekler was a social way to rank things with friends or the entire community.  
+  * --[no-]sql:
+    MySQL, PostgreSQL, Sqlite, CouchDB, MongoDB, Redis, Riak
 
-__Indigio__  
-Java Lead Engineer  
-August 2006 - May 2007  
-Developed web sites for Fortune 500 companies. Managed a small Java team with local and international remote employees.  
+  * --version-control:
+    git (please), SVN
 
-* Developed and deployed large scale newspaper, real estate, and car rental companies Java sites
+  * --platform:
+    Linux, BSD, Windows. Specifically, experience using Debian, Ubuntu, Gentoo,
+    CentOS, OS X. Also, experience developing for: Solaris, AIX, HP-UX, RHEL,
+    SuSE, Fedora, FreeBSD, Windows.
 
+STANDARDS
+---------
 
-__Impact Science & Technology (IST)__  
-Java Software Engineer  
-December 2005 - June 2006  
-Developed full lifecycle of a DOD distributed synchronous infrastructure in Java.  
+  * Communication:
+    Excellent written and verbal communication skills.
 
+  * Development:
+    Pair Programming, Distributed Teams, Agile team
+    management (XP, Scrum, Kanban), Open Source project management.
 
-Education
----------------  
-University of Colorado  
-Boulder, CO  
-B.S., Computer Science  
-GPA: 3.185  
+  * Testing:
+    Test Driven Development, Regression Testing, Quality Assurance
 
-_References available on request_  
+  * User Experience:
+    Focus on usability and the design of interactive systems, not limited to
+    the web but also including API design and library design.
+
+  * HTML and CSS:
+    Web Standards, cross-browser compatibility, HTML5, XHTML, CSS2, CSS3
+
+  * HTTP:
+    RESTful Web Service APIs, HTTP client applications
+
+HISTORY
+-------
+
+  * PuppetLabs (2009 to Present, Full Time):
+
+    Drove adoption of Agile practices including Kanban, Scrum meetings, and
+    Release Planning and Retrospectives.
+
+    Developed Puppet, a library that runs on multiple Ruby versions on many
+    platforms, including Linux, BSD, Solaris, AIX, HP-UX and Windows, used by
+    companies from RHEL to Google to eBay to form the backbone of their
+    configuration management systems.
+
+    Designed, developed and maintained Puppet Dashboard, an interactive web
+    application, for intuitive reporting and configuration of Puppet systems.
+
+    Maintained and developed Facter, a cross-platform library for retreiving
+    simple system facts. Experience with the idiosyncracies of various Linux
+    and BSD flavors.
+
+    Contact: Markus Roberts, <markus@puppetlabs.com>  
+    <http://www.puppetlabs.com>  
+
+  * Hashrocket (2008 to 2009, Full Time):
+
+    Lead small teams of pair programmers building rich web applications using
+    the Rails framework. Trained and mentored junior and intermediate level
+    Ruby developers.
+
+    Lead Agile story carding workshops and served as Product Owner,
+    collaborating with and representing Hashrocket's clients in planning and
+    implementation.
+
+    Provided long-term on-site Ruby and Agile consultant for Fortune 500
+    buniness, training their development and management teams and assisting in
+    their transition from ASP.NET to Rails.
+
+    Contact: Obie Fernandez, CEO, <obie@hashrocket.com>  
+    <http://www.hashrocket.com>  
+
+_Further references available upon request_
+
+SEE ALSO
+--------
+
+[GitHub](http://github.com/reinh)  
+[Blog](http://reinh.com)  

@@ -6,12 +6,13 @@ require 'sinatra'
 require 'less'
 require 'rdiscount'
 require 'maruku'
+require 'ronn'
 
 get '/' do
    title = resume_data.split("\n").first
    #oops 1.8.7 only?
     #resume_data.lines.first.strip
-   resume = RDiscount.new(resume_data, :smart).to_html
+   resume = Ronn::Document.new('data/resume.md').convert('html')
    erubis :index, :locals => { :title => title, :resume => resume, :formats => true }
 end
 
@@ -47,5 +48,5 @@ get '/pdf' do
 end
 
 def resume_data
-  File.read("data/resume.md")
+  @resume_data ||= File.read("data/resume.md")
 end
