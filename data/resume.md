@@ -53,8 +53,8 @@ STANDARDS
     Test Driven Development, Regression Testing, Quality Assurance
 
   * User Experience:
-    Focus on usability and the design of interactive systems, not limited to
-    the web but also including API design and library design.
+    Focus on usability and the design of interactive systems, not only for the
+    web but also CLI, API and library design.
 
   * HTML and CSS:
     Web Standards, cross-browser compatibility, HTML5, XHTML, CSS2, CSS3
