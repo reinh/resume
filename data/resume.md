@@ -87,11 +87,11 @@ HISTORY
 
   * Hashrocket (2008 to 2009, Full Time):
 
-    Lead small teams of pair programmers building rich web applications using
+    Led small teams of pair programmers building rich web applications using
     the Rails framework. Trained and mentored junior and intermediate level
     Ruby developers.
 
-    Lead Agile story carding workshops and served as Product Owner,
+    Led Agile story carding workshops and served as Product Owner,
     collaborating with and representing Hashrocket's clients in planning and
     implementation.
 
