@@ -49,7 +49,7 @@ namespace :heroku do
 end
 
 task :render do
-  sh "ronn --pipe -5 data/resume.md > index.html"
+  sh "ronn --pipe -5 data/resume.md |grep -v 'dt.flush' > index.html"
 end
 
 task :commit do
