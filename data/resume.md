@@ -13,7 +13,7 @@ SYNOPSIS
 Rein is a senior software developer with experience ranging from web
 application design and development to systems configuration management.
 
-He has lead teams using agile methods, contributed to and maintained several
+He has led teams using agile methods, contributed to and maintained several
 popular open source projects, and some other awesome stuff too.
 
 OPTIONS
