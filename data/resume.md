@@ -65,7 +65,7 @@ STANDARDS
 HISTORY
 -------
 
-  * PuppetLabs (2009 to Present, Full Time):
+  * PuppetLabs (2009 to 2010, Full Time):
 
     Drove adoption of Agile practices including Kanban, Scrum meetings, and
     Release Planning and Retrospectives.
@@ -85,7 +85,7 @@ HISTORY
     Contact: Markus Roberts, <markus@puppetlabs.com>  
     <http://www.puppetlabs.com>  
 
-  * Hashrocket (2008 to 2009, Full Time):
+  * Hashrocket (2007 to 2009, Full Time):
 
     Led small teams of pair programmers building rich web applications using
     the Rails framework. Trained and mentored junior and intermediate level
