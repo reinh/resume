@@ -1,372 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hi! This is Rein Henrichs&rsquo;s resume.</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Org-mode">
 
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <style type="text/css">
-     /* org mode styles on top of twbs */
+<head>
+  <title>Hi! This is Rein Henrichs&rsquo;s resume.</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-     html {
-       position: relative;
-       min-height: 100%;
-     }
+<body>
+  <main>
+    <h1>Hi! This is Rein Henrichs&rsquo;s resume.</h1>
+    <p class="lead">
+      I am a kind and considerate <b>technical leader</b>, <b>coach</b>, <b>mentor</b>, <b>software developer</b>, <b><a
+          href="http://resiliencepapers.club/">resilience engineer</a></b>, and <b>teammate</b>. I am a good listener
+      and an effective communicator. I believe that most technical problems problems can be solved by listening, caring,
+      and empoweringd helping people overcome difficult technical challenges (which usually involves helping people work
+      better together). I also wrote a database in Haskell once, so I have that going for me, which is&nbsp;nice.
+    </p>
 
-     body {
-       font-size: 18px;
-       margin-bottom: 105px;
-     }
-
-     footer {
-       position: absolute;
-       bottom: 0;
-       width: 100%;
-       height: 101px;
-       background-color: #f5f5f5;
-     }
-
-     footer > div {
-       padding: 10px;
-     }
-
-     footer p {
-       margin: 0 0 5px;
-       text-align: center;
-       font-size: 16px;
-     }
-
-     #table-of-contents {
-       margin-top: 20px;
-       margin-bottom: 20px;
-     }
-
-     blockquote p {
-       font-size: 18px;
-     }
-
-     pre {
-       font-size: 16px;
-     }
-
-     .footpara {
-       display: inline-block;
-     }
-
-     figcaption {
-       font-size: 16px;
-       color: #666;
-       font-style: italic;
-       padding-bottom: 15px;
-     }
-
-     /* from twbs docs */
-
-     .bs-docs-sidebar.affix {
-       position: static;
-     }
-     @media (min-width: 768px) {
-       .bs-docs-sidebar {
-         padding-left: 20px;
-       }
-     }
-
-     /* All levels of nav */
-     .bs-docs-sidebar .nav > li > a {
-       display: block;
-       padding: 4px 20px;
-       font-size: 14px;
-       font-weight: 500;
-       color: #999;
-     }
-     .bs-docs-sidebar .nav > li > a:hover,
-     .bs-docs-sidebar .nav > li > a:focus {
-       padding-left: 19px;
-       color: #A1283B;
-       text-decoration: none;
-       background-color: transparent;
-       border-left: 1px solid #A1283B;
-     }
-     .bs-docs-sidebar .nav > .active > a,
-     .bs-docs-sidebar .nav > .active:hover > a,
-     .bs-docs-sidebar .nav > .active:focus > a {
-       padding-left: 18px;
-       font-weight: bold;
-       color: #A1283B;
-       background-color: transparent;
-       border-left: 2px solid #A1283B;
-     }
-
-     /* Nav: second level (shown on .active) */
-     .bs-docs-sidebar .nav .nav {
-       display: none; /* Hide by default, but at >768px, show it */
-       padding-bottom: 10px;
-     }
-     .bs-docs-sidebar .nav .nav > li > a {
-       padding-top: 1px;
-       padding-bottom: 1px;
-       padding-left: 30px;
-       font-size: 12px;
-       font-weight: normal;
-     }
-     .bs-docs-sidebar .nav .nav > li > a:hover,
-     .bs-docs-sidebar .nav .nav > li > a:focus {
-       padding-left: 29px;
-     }
-     .bs-docs-sidebar .nav .nav > .active > a,
-     .bs-docs-sidebar .nav .nav > .active:hover > a,
-     .bs-docs-sidebar .nav .nav > .active:focus > a {
-       padding-left: 28px;
-       font-weight: 500;
-     }
-
-     /* Nav: third level (shown on .active) */
-     .bs-docs-sidebar .nav .nav .nav {
-       padding-bottom: 10px;
-     }
-     .bs-docs-sidebar .nav .nav .nav > li > a {
-       padding-top: 1px;
-       padding-bottom: 1px;
-       padding-left: 40px;
-       font-size: 12px;
-       font-weight: normal;
-     }
-     .bs-docs-sidebar .nav .nav .nav > li > a:hover,
-     .bs-docs-sidebar .nav .nav .nav > li > a:focus {
-       padding-left: 39px;
-     }
-     .bs-docs-sidebar .nav .nav .nav > .active > a,
-     .bs-docs-sidebar .nav .nav .nav > .active:hover > a,
-     .bs-docs-sidebar .nav .nav .nav > .active:focus > a {
-       padding-left: 38px;
-       font-weight: 500;
-     }
-
-     /* Show and affix the side nav when space allows it */
-     @media (min-width: 992px) {
-       .bs-docs-sidebar .nav > .active > ul {
-         display: block;
-       }
-       /* Widen the fixed sidebar */
-       .bs-docs-sidebar.affix,
-       .bs-docs-sidebar.affix-bottom {
-         width: 213px;
-       }
-       .bs-docs-sidebar.affix {
-         position: fixed; /* Undo the static from mobile first approach */
-         top: 20px;
-       }
-       .bs-docs-sidebar.affix-bottom {
-         position: absolute; /* Undo the static from mobile first approach */
-       }
-       .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
-         margin-top: 0;
-         margin-bottom: 0
-       }
-     }
-     @media (min-width: 1200px) {
-       /* Widen the fixed sidebar again */
-       .bs-docs-sidebar.affix-bottom,
-       .bs-docs-sidebar.affix {
-         width: 263px;
-       }
-     }
-    </style>
-    <style>body { margin-bottom: 0px; }</style>
-    <script type="text/javascript">
-     $(function() {
-       'use strict';
-
-       $('.bs-docs-sidebar li').first().addClass('active');
-
-       $(document.body).scrollspy({target: '.bs-docs-sidebar'});
-
-       $('.bs-docs-sidebar').affix();
-     });
-    </script>
-  </head>
-  <body>
-    <div id="content" class="container">
-      <div class="row"><div class="col-md-12"><h1 class="title">Hi! This is Rein Henrichs&rsquo;s resume.</h1>
-        <p class="lead">
-          I am a kind and considerate <b>technical leader</b>, <b>coach</b>, <b>mentor</b>, <b>software
-          developer</b>, <b>DevOps person</b>, and <b>teammate</b>. I am a good listener and an effective
-          communicator. I believe that most technical problems are really people
-          problems, and that people problems can be solved by listening, caring, and
-          empowering others. My greatest passions are helping people work better together and
-          helping people overcome difficult technical challenges (which usually involves helping
-          people work better together). I also wrote a database in Haskell once, so I have
-          that going for me, which is nice.
-        </p>
-
-        <dl class="org-dl pull-right">
-          <dt> Phone  </dt><dd><a href="tel:503-784-0697">503-784-0697</a>
-          </dd>
-          <dt> Email  </dt><dd><a href="mailto:rein.henrichs@gmail.com">rein.henrichs@gmail.com</a>
-          </dd>
-          <dt> Github </dt><dd><a href="http://github.com/reinh">http://github.com/reinh</a>
-          </dd>
-          <dt> Blog   </dt><dd><a href="http://reinh.com/notes">http://reinh.com/notes</a>
-          </dd>
-        </dl>
-
-        <div id="outline-container-sec-" class="outline-2">
-          <h2 id="sec-">Work Experience</h2>
-          <div id="outline-container-sec-" class="outline-3">
-              <h3 id="sec-">Green Bits</h3>
-              <div class="outline-text-3" id="text-">
-                  <p>
-                      <b>2017-2018</b>
-                  </p>
-
-                  <p>
-                      <i>Senior Software Engineer</i>
-                  </p>
-
-                  <p>
-                      Transitioned engineering organization to SRE, improved
-                      reliability of core internal systems, defined and improved
-                      processes for customer onboarding (post-sales), developed
-                      integrations with difficult third-party APIs, solved
-                      distributed systems challenges and made recommendations
-                      for architectural improvements.
-                  </p>
-              </div>
+    <div>
+      <div class="switcher">
+        <div>
+          <div>
+            <b>Phone:</b>&nbsp;<a href="tel:503-784-0697">503-784-0697</a>
           </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">Cloud City Development</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2015-2017</b>
-              </p>
-
-              <p>
-                <i>Senior Software Engineer</i>
-              </p>
-
-              <p>
-                Web development, infrastructure, agile, devops, etc. consulting.
-              </p>
-            </div>
+          <div>
+            <b>Email:</b>&nbsp;<a href="mailto:rein.henrichs@gmail.com">rein.henrichs@gmail.com</a>
           </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">AlephCloud Systems, Inc.</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2014-2015</b>
-              </p>
-
-              <p>
-                <i>Senior Software Enginner</i>
-              </p>
-
-              <p>
-                Deployed and managed all production and continuous delivery cloud infrastructure
-                for a Haskell-based email encryption platform.
-              </p>
-            </div>
-          </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">AT&amp;T</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2013-2014</b>
-              </p>
-
-              <p>
-                <i>Principle Technical Engineer</i>
-              </p>
-
-              <p>
-                Designed, built, and ran the tools and systems that powered the &ldquo;cloud&rdquo; initiatives around OpenStack at AT&amp;T.
-              </p>
-            </div>
-          </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">LivingSocial</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2011-2013</b>
-              </p>
-
-              <p>
-                <i>Senior Software Engineer</i>
-              </p>
-
-              <p>
-                Lead small teams of developers that shipped a number of applications that
-                provided new services to merchants and customers. Improved development workflow
-                by introducing a distributed, agile workflow based around the use of GitHub pull
-                requests for feedback and code review.
-              </p>
-            </div>
-          </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">App Fog, Inc.</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2010-2011</b>
-              </p>
-
-              <p>
-                <i>Developer</i>
-              </p>
-
-              <p>
-                As the first employee, helped build and grow a PaaS from hundreds of hosted
-                applications to tens of thousands. Responsible for technical and architectural
-                decisions, hiring decisions, and building a company culture based on trust and
-                shared ownership.
-              </p>
-            </div>
-          </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">Puppet</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2009-2010</b>
-              </p>
-
-              <p>
-                <i>Senior Software Engineer</i>
-              </p>
-
-              <p>
-                Developed the core puppet configuration management system, maintained the Facter
-                open source project, built the first Puppet Dashboard web application.
-              </p>
-            </div>
-          </div>
-
-          <div id="outline-container-sec-" class="outline-3">
-            <h3 id="sec-">Hashrocket, Inc.</h3>
-            <div class="outline-text-3" id="text-">
-              <p>
-                <b>2007-2009</b>
-              </p>
-
-              <p>
-                <i>Developer, Consultant</i>
-              </p>
-
-              <p>
-                Guided clients through an agile development process and lead small teams of
-                developers building full-stack Rails applications with a focus on pair
-                programming, BDD, and continuous improvement.
-              </p>
-            </div>
+          <div>
+            <b>Github:</b>&nbsp;<a href="https://github.com/reinh">github.com/reinh</a>
           </div>
         </div>
-      </div></div></div>
-  </body>
+      </div>
+    </div>
+
+    <h2>Work Experience</h2>
+
+    <h3>Independent Contractor</h3>
+    <p class="subtitle">2018&ndash;present</p>
+
+    <p>
+      Worked with a variety of clients (mostly startups) to solve hard technical problems and help teams work better
+      together. Here are some things I helped teams do (in addition to typical development work):
+
+      <ul>
+        <li>Fixed large scale distributed systems bugs.</li>
+        <li>Helped a team transition from Agile to Kanban.</li>
+        <li>Introduced and facilitated a new type of agile retrospective that produced more and better learnings.</li>
+        <li>Introduced an experiment-based continuous improvement process to help teams work better together.</li>
+        <li>Introduced an incident analysis process that supplemented traditional post-mortem process and
+          focused on <a href="https://www.learningfromincidents.io/">learning from incidents</a> and <a
+            href="https://en.m.wikipedia.org/wiki/Adaptive_capacity">adaptive capacity</a>.</li>
+        <li>Designed and implemented an onboarding process for new engineers that focused on continuous improvement
+          through feedback from the newly onboarded engineers.</li>
+        <li>Mentored an intern who was hired as a junior engineer and is now leading projects.</li>
+      </ul>
+    </p>
+
+    <h3>Greenbits, Inc. </h3>
+    <p class="subtitle"><i>Senior Software Engineer</i>, 2017&ndash;2018</p>
+
+    <p>
+      Transitioned engineering organization to SRE, improved reliability of
+      core internal systems, defined and improved processes for customer
+      onboarding (post-sales), developed integrations with difficult
+      third-party APIs, solved distributed systems challenges and made
+      recommendations for architectural improvements.
+    </p>
+
+    <h3>Cloud City Development</h3>
+    <p class="subtitle"> <i>Senior Software Engineer</i>, 2015&ndash;2017 </p>
+
+    <p>
+      Web development, infrastructure, agile, devops, etc. consulting.
+    </p>
+
+    <h3>AlephCloud Systems, Inc.</h3>
+
+    <p class="subtitle"> <i>Senior Software Enginner</i>, 2014&ndash;2015 </p>
+
+    <p>
+      Deployed and managed all production and continuous delivery cloud
+      infrastructure for a Haskell-based email encryption platform.
+    </p>
+
+    <h3>AT&amp;T</h3>
+
+    <p class="subtitle">
+      <i>Principle Technical Engineer</i>, 2013&ndash;2014
+    </p>
+
+    <p>
+      Designed, built, and ran the tools and systems that powered the
+      &ldquo;cloud&rdquo; initiatives around OpenStack at AT&amp;T.
+    </p>
+
+    <h3>LivingSocial</h3>
+
+    <p class="subtitle">
+      <i>Senior Software Engineer</i>, 2011&ndash;2013
+    </p>
+
+    <p>
+      Lead small teams of developers that shipped a number of applications
+      that provided new services to merchants and customers. Improved
+      development workflow by introducing a distributed, agile workflow based
+      around the use of GitHub pull requests for feedback and code review.
+    </p>
+
+    <h3>App Fog, Inc.</h3>
+
+    <p class="subtitle">
+      <i>Developer</i>, 2010&ndash;2011
+    </p>
+
+    <p>
+      As the first employee, helped build and grow a PaaS from hundreds of
+      hosted applications to tens of thousands. Responsible for technical and
+      architectural decisions, hiring decisions, and building a company
+      culture based on trust and shared ownership.
+    </p>
+
+    <h3>Puppet Labs, Inc.</h3>
+
+    <p class="subtitle">
+      <i>Senior Software Engineer</i>, 2009&ndash;2010
+    </p>
+
+    <p>
+      Developed the core puppet configuration management system, maintained
+      the Facter open source project, built the first Puppet Dashboard web
+      application.
+    </p>
+
+    <h3>Hashrocket, Inc.</h3>
+
+    <p class="subtitle">
+      <i>Developer, Consultant</i>, 2007&ndash;2009
+    </p>
+
+    <p>
+      Guided clients through an agile development process and lead small teams
+      of developers building full-stack Rails applications with a focus on
+      pair programming, BDD, and continuous improvement.
+    </p>
+  </main>
+</body>
+
 </html>
